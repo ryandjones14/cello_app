@@ -6,7 +6,7 @@ class TodosController < ApplicationController
 
   def new
     @todo = Todo.new
-    @list_id = @todo.list_id
+    @list = @todo.list
   end
 
   def create

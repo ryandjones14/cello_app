@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CelloApp</title>
+  <title>DoStuffApp</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -12,8 +12,8 @@
 </head>
 <body>
   <header id="header">
-    <h1><%= link_to "Cello", '/' %></h1>
-    <h4>The ToDo List for Musicians</h4>
+    <h1><%= link_to "Do Stuff", '/' %></h1>
+    <h4>Get crap done.</h4>
     <%= link_to '<button type="button" class="btn btn-primary btn-lg">Create New List</button>'.html_safe, '/lists/new' %>
   </header><!-- /header -->
   <section class="main">

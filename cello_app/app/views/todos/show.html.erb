@@ -1,4 +1,4 @@
 <h2><%= @todo.item %></h2>
 
 
-<%= link_to 'Delete', @todo, method: :delete, data: { confirm: 'Are you sure?' }, %>
+<%= link_to '<button type="button" class="btn btn-success btn-sm">Complete</button>'.html_safe, @todo, method: :delete, data: { confirm: 'Are you sure?' } %>

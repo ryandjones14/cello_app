@@ -7,4 +7,5 @@
 
 </ul>
 
-<%= link_to '<button type="button" class="btn btn-primary btn-sm">Add New To-Do List item</button>'.html_safe, '/todos/new' %>
+<%= link_to '<button type="button" class="btn btn-primary btn-sm">Add New To-Do List item</button>'.html_safe, '/todos/new/@list.id' %><br><br>
+<%= link_to '<button type="button" class="btn btn-danger btn-sm">Delete List</button>'.html_safe, @list, method: :delete, data: { confirm: 'Are you sure?' } %>
