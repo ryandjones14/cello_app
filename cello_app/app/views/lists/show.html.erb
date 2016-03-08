@@ -4,8 +4,7 @@
   <% @todos.each do |todo| %>
     <li><%= link_to todo.item, todo %></li>
   <% end %>
-  <%= input type="hidden" name="_method" value="delete" %>
-    <%= input type="submit" value="Delete" %>
+
 </ul>
 
-<%= link_to '<button type="button">Add new To-Do List item</button>'.html_safe, '/todos/new/:list_id' %>
+<%= link_to '<button type="button">Add New To-Do List item</button>'.html_safe, '/todos/new' %>
