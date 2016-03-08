@@ -1,1 +1,7 @@
-<h1>Look! My hand is a dolphin!</h1>
+<h1><%= @list.name %></h1>
+
+<ul>
+  <% @todos.each do |todo| %>
+    <li><%= todo.item %></li>
+  <% end %>
+</ul>
