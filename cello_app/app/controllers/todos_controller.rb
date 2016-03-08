@@ -18,11 +18,12 @@ class TodosController < ApplicationController
     redirect_to '/lists'
   end
 
-  def delete
-    @todo = Todo.find(params["id"])
+  def destroy
+    @todo = Todo.find(params[:id])
     @todo.destroy
 
     redirect_to '/lists'
   end
+
 
 end
