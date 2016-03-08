@@ -2,7 +2,7 @@
 <p>We're like Trello, but one note better</p>
 
 <ul>
-<% @list.each do |list| %>
-<%= list.name %>
+<% @lists.each do |list| %>
+<li><%= list.name %></li>
 <% end %>
 </ul>
