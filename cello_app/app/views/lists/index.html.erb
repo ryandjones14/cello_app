@@ -1,8 +1,8 @@
-
+<h2>Your Lists</h2>
 <ul>
 <% @lists.each do |list| %>
 <li><%= link_to list.name, list %></li>
 <% end %>
 </ul>
 
-<%= link_to '<button type="button">Create New List</button>'.html_safe, '/lists/new' %>
+<%= link_to '<button type="button" class="btn btn-primary btn-sm">Create New List</button>'.html_safe, '/lists/new' %>

@@ -4,3 +4,12 @@
   top: -25px;
   padding: 25px 50px;
 }
+.main{
+  position: relative;
+}
+
+.yields{
+  width: 50%;
+  position: relative;
+  left: 10%;
+}
