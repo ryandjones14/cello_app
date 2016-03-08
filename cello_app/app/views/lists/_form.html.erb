@@ -1,9 +1,9 @@
 
 
 
-<%= form_for @list do |f| %>
+<%= form_for @list do |f|%>
   <%= f.label :name %><br>
-  <%= f.text_field :name %><br>
+  <%= f.text_field :name %><br><br>
 
-  <%= f.submit "New List" %>
+  <%= f.submit "New List", :class => 'btn btn-primary btn-sm' %>
 <% end %>
