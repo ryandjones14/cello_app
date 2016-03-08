@@ -13,6 +13,7 @@ class TodosController < ApplicationController
     @todo = Todo.new
     @todo.item = params["todo"]["item"]
     @todo.list_id = params["todo"]["list_id"]
+
     @todo.save
 
     redirect_to '/lists'
