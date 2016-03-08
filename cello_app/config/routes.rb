@@ -4,5 +4,8 @@ Rails.application.routes.draw do
   resources :lists
 
 
-root "lists#index"
+  root "lists#index"
+
+  get '/todos/new/:list_id'
+
 end
