@@ -4,4 +4,6 @@
   <% @todos.each do |todo| %>
     <li><%= todo.item %></li>
   <% end %>
+  <%= input type="hidden" name="_method" value="delete" %>
+    <%= input type="submit" value="Delete" %>
 </ul>

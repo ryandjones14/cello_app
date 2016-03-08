@@ -21,11 +21,11 @@ class ListsController < ApplicationController
     redirect_to '/lists'
   end
 
-  def delete
-    @list = List.destroy
-    @list.id = params["list"]["id"]
+  def delete 
+    @list = List.find(params["id"])
     @list.destroy
 
-    redirect_to '/lists'
+    redirect '/lists'
   end
+
 end
