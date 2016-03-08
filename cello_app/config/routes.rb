@@ -6,6 +6,4 @@ Rails.application.routes.draw do
 
   root "lists#index"
 
-  get '/todos/new/:list_id'
-
 end
