@@ -21,11 +21,4 @@ class ListsController < ApplicationController
     redirect_to '/lists'
   end
 
-  def delete
-    @list = List.destroy
-    @list.id = params["list"]["id"]
-    @list.destroy
-
-    redirect_to '/lists'
-  end
 end

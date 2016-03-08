@@ -1,3 +1,8 @@
 <h1><%= @todo.item %></h1>
 
-<p>Completed! button will go here.</p>
+<%=link_to '<form>
+<input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete">
+</form>'.html_safe, '/lists/:list_id' %>
+
+<p>Completed!</p>
