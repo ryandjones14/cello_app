@@ -1,8 +1,9 @@
 <h2><%= @todo.item %></h2>
 
-<%=link_to '<form>
-<input type="hidden" name="_method" value="delete">
-  <input type="submit" value="Delete">
-</form>'.html_safe, '/lists/:list_id' %>
 
-<p>Completed!</p>
+<!-- <%= link_to '<form>
+<input type="hidden" name="_method" value="Delete">
+  <input type="submit" value="Delete">
+</form>'.html_safe, '/lists' %> -->
+
+<%= link_to 'Delete', @todo, method: :delete, data: { confirm: 'Are you sure?' } %>

@@ -20,5 +20,4 @@ class ListsController < ApplicationController
 
     redirect_to '/lists'
   end
-
 end
