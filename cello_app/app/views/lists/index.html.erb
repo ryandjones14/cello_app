@@ -3,6 +3,8 @@
 
 <ul>
 <% @lists.each do |list| %>
-<li><%= list.name %></li>
+<li><%= link_to list.name, list %></li>
 <% end %>
 </ul>
+
+<%= link_to '<button type="button">Create New List</button>'.html_safe, '/lists/new' %>
