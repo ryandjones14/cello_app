@@ -7,6 +7,7 @@ class TodosController < ApplicationController
   def new
     @todo = Todo.new
     @list = @todo.list
+
   end
 
   def create
@@ -16,7 +17,7 @@ class TodosController < ApplicationController
 
     @todo.save
 
-    redirect_to '/lists'
+    redirect_to @todo.list
   end
 
   def destroy
