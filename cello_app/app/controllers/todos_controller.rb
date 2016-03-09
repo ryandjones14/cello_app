@@ -6,7 +6,7 @@ class TodosController < ApplicationController
 
   def new
     @todo = Todo.new
-    @list = @todo.list
+    @list =  List.find(params[:list])
 
   end
 
